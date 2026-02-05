@@ -6,7 +6,7 @@
 
   body {
   margin: 0;
-  background-color: #cc66ff; /* violet base */
+  background-color: #cc66ff; 
   font-family: 'Oooh Baby', cursive;
   color: #000;
   overflow-x: hidden;
@@ -14,8 +14,8 @@
 
 .main-wrapper {
       display: flex;
-      justify-content: flex-start; /* or space-between if needed */
-      align-items: flex-start;     /* align top! not center */
+      justify-content: flex-start; 
+      align-items: flex-start;     
       height: 100vh;
       gap: 40px;
       padding: 70px 220px;
@@ -220,4 +220,5 @@ translation-page {
                   0 0 16px rgba(208, 128, 255, 0.6);
       transition: 0.3s ease;
    }
+
 	
