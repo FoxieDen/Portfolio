@@ -210,8 +210,8 @@
        cursor: pointer;
 }
     #user-input:placeholder {
-       color: #B3D3FF; /* or white: #ffffff */
-       opacity: 1;     /* ensure it's not faded */
+       color: #B3D3FF; 
+       opacity: 1;     
 }
 .button_containerR{
       position: absolute;
@@ -299,4 +299,5 @@
       padding: 10px;
       border-radius: 12px;
 }
+
 
