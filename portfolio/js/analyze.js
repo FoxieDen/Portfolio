@@ -5,7 +5,6 @@ function closeOverlay(type) {
   }
 }
 function openOverlay(id) {
-    // Hide all overlays
 
     const overlays = document.querySelectorAll('.overlay');
 
@@ -14,7 +13,6 @@ function openOverlay(id) {
         overlay.style.display = 'none';
     });
 
-    // Show the one selected
     const target = document.getElementById('overlay-' + id);
     if (target) {
         target.style.display = 'flex';
@@ -27,3 +25,4 @@ function closeOverlay(id) {
         target.style.display = 'none';
     }
 }
+
