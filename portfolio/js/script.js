@@ -69,15 +69,11 @@ document.addEventListener('DOMContentLoaded', () => {
 		
     }
   }
-
-    // Input field ENTER
   inputField.addEventListener('keydown', function (event) {
     if (event.key === 'Enter') {
       respondToUser();
     }
   });
-
-  // Button click
   buttonSumire.addEventListener('click', function () {
     respondToUser('twitch');
 
@@ -90,29 +86,4 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 
-});
-let clickCount = 0;
-let lastDirection = null;
 
-function handleSecretDirection(direction, event) {
-  if (direction === lastDirection) {
-    clickCount++;
-  } else {
-    clickCount = 1;
-    lastDirection = direction;
-  }
-
-  if (clickCount >= 3) {
-    event.preventDefault(); // ❌ stop default redirect
-    window.location.href = "Secret.html"; // 🔐 secret redirect
-  }
-}
-
-// Attach listeners after DOM loads
-window.addEventListener("DOMContentLoaded", () => {
-  const leftBtn = document.getElementById("left_Button");
-  const rightBtn = document.getElementById("right_Button");
-
-  leftBtn.addEventListener("click", (e) => handleSecretDirection("left", e));
-  rightBtn.addEventListener("click", (e) => handleSecretDirection("right", e));
-});
